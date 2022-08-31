@@ -1,0 +1,22 @@
+@use '../scss/abstracts/' as *;
+
+.main {
+    padding-left: $sideBarWidth;
+    overflow-x: hidden;
+
+    @include tablet {
+        padding-left: 0;
+        width: 100vw;
+    }
+
+    &_content {
+        min-height: 100vh;
+        padding: $spacing;
+
+        @include tablet {
+            padding: $mobileSpacing;
+            position: relative;
+            background-color: $bodyBg;
+        }
+    }
+}
