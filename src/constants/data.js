@@ -41,18 +41,22 @@ const data = {
     },
     overall: [
         {
+            icon: <i className="bx bx-receipt"></i>,
             value: '300K',
             title: 'Orders'
         },
         {
+            icon: <i className="bx bx-user"></i>,
             value: '9.876K',
             title: 'Customers'
         },
         {
+            icon: <i className="bx bx-cube"></i>,
             value: '1.234K',
             title: 'Products'
         },
         {
+            icon: <i className="bx bx-dollar"></i>,
             value: '$5678',
             title: 'Revenue'
         }

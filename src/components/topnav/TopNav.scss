@@ -14,7 +14,7 @@
         --size: 40px;
         width: var(--size);
         height: var(--size);
-        // display: none;
+        display: none;
 
         @include tablet {
             display: flex;
