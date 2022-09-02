@@ -16,11 +16,19 @@ function SideBar(props) {
     setActiveIndex(curPath.length === 0 ? 0 : activeItem);
   } , [location])
 
+  const closeSidebar = () => {
+    document.querySelector('.main_content').style.transform= 'scale(1) translateX(0)';
+    setTimeout(() => {
+      document.body.classList.remove('sidebar-open');
+      document.querySelector('.main_content').style= '';
+    } , 500)
+  }
+
   return (
     <div className="sidebar">
       <div className="sidebar_logo">
         <img src={image.logo} alt="" />
-        <div className="sidebar-close">
+        <div className="sidebar-close" onClick={closeSidebar}>
             <i className="bx bx-x"></i>
         </div>
       </div>
@@ -32,6 +40,7 @@ function SideBar(props) {
               index === activeIndex ? "active" : ""
             }`}
             key={`nav-${index}`}
+            onClick={closeSidebar}
           >
             <div className="sidebar_menu_item_icon">{item.icon}</div>
             <div className="sidebar_menu_item_txt">{item.text}</div>

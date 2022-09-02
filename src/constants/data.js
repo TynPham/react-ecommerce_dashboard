@@ -41,22 +41,22 @@ const data = {
     },
     overall: [
         {
-            icon: <i className="bx bx-receipt"></i>,
+            icon: <i className="bx bx-receipt" style={{fontSize: '30px', color: '#000'}}></i>,
             value: '300K',
             title: 'Orders'
         },
         {
-            icon: <i className="bx bx-user"></i>,
+            icon: <i className="bx bx-user" style={{fontSize: '30px', color: '#000'}}></i>,
             value: '9.876K',
             title: 'Customers'
         },
         {
-            icon: <i className="bx bx-cube"></i>,
+            icon: <i className="bx bx-cube" style={{fontSize: '30px', color: '#000'}}></i>,
             value: '1.234K',
             title: 'Products'
         },
         {
-            icon: <i className="bx bx-dollar"></i>,
+            icon: <i className="bx bx-dollar" style={{fontSize: '30px', color: '#000'}}></i>,
             value: '$5678',
             title: 'Revenue'
         }

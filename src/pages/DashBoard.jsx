@@ -14,6 +14,8 @@ import {
     Tooltip,
     Legend
 } from 'chart.js';
+import OverallList from '../components/overall_list/Overall_list';
+import RevenueList from '../components/revenue_list/RevenueList';
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -51,7 +53,14 @@ function DashBoard(props) {
                     </div>
             </DashboardWrapperMain>
             <DashboardWrapperRight>
-                right
+                <div className="title mb">Overall</div>
+                <div className="mb">
+                    <OverallList />
+                </div>
+                <div className="title mb">Revenue by channel</div>
+                <div className="mb">
+                    <RevenueList />
+                </div>
             </DashboardWrapperRight>
         </DashboardWrapper>
     );
