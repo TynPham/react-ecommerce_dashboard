@@ -53,12 +53,12 @@ function DashBoard(props) {
                     </div>
             </DashboardWrapperMain>
             <DashboardWrapperRight>
-                <div className="title mb">Overall</div>
-                <div className="mb">
+                <div className="title mb-small">Overall</div>
+                <div className="mb-medium">
                     <OverallList />
                 </div>
-                <div className="title mb">Revenue by channel</div>
-                <div className="mb">
+                <div className="title mb-small">Revenue by channel</div>
+                <div className="mb-medium">
                     <RevenueList />
                 </div>
             </DashboardWrapperRight>

@@ -22,8 +22,11 @@
             line-height: 1.2;
 
             span {
-                font-size: 13px;
+                font-size: 12px;
                 font-weight: 400;
+                @include tablet {
+                    font-size: 15px;
+                }
             }
         }
         &_value {
@@ -47,5 +50,8 @@
     &_value {
         font-size: $fontSizeLarge;
         font-weight: 700;
+    }
+    &_chart {
+        width: 200px;
     }
 }
