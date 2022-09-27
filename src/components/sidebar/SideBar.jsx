@@ -9,27 +9,27 @@ function SideBar(props) {
   const location = useLocation();
 
   useEffect(() => {
-    console.log('e');
-    const curPath = location.pathname.split('/')[1];
-    const activeItem = sidebarNav.findIndex(item => item.section === curPath);
+    const curPath = location.pathname.split("/")[1];
+    const activeItem = sidebarNav.findIndex((item) => item.section === curPath);
 
     setActiveIndex(curPath.length === 0 ? 0 : activeItem);
-  } , [location])
+  }, [location]);
 
   const closeSidebar = () => {
-    document.querySelector('.main_content').style.transform= 'scale(1) translateX(0)';
+    document.querySelector(".main_content").style.transform =
+      "scale(1) translateX(0)";
     setTimeout(() => {
-      document.body.classList.remove('sidebar-open');
-      document.querySelector('.main_content').style= '';
-    } , 500)
-  }
+      document.body.classList.remove("sidebar-open");
+      document.querySelector(".main_content").style = "";
+    }, 500);
+  };
 
   return (
     <div className="sidebar">
       <div className="sidebar_logo">
         <img src={image.logo} alt="" />
         <div className="sidebar-close" onClick={closeSidebar}>
-            <i className="bx bx-x"></i>
+          <i className="bx bx-x"></i>
         </div>
       </div>
       <div className="sidebar_menu">
